@@ -72,7 +72,7 @@ body {
 .container {
   width: 1200px;
   padding: 0 15px;
-  
+
 }
 
 .section-title {
@@ -120,7 +120,7 @@ body {
 
 .hero-content {
   flex-direction: column;
-  align-items:flex-start;
+  align-items: flex-start;
   max-width: 50%;
 
 }
@@ -173,4 +173,82 @@ body {
 .services-item-descr {
   margin: 0;
   text-align: center;
+}
+
+/* articles */
+
+.articles-list {
+  flex-wrap: wrap;
+}
+
+.articles-item {
+  width: 570px;
+  margin-bottom: 30px;
+  outline: 1px solid coral;
+}
+
+.articles-item:not(:nth-child(2n)) {
+  margin-right: 30px;
+}
+
+.blog-preview-image {
+  object-fit: cover;
+}
+
+.blog-preview-text {
+  padding: 30px;
+}
+
+.blog-review-time {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.blog-preview-title {
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+.blog-preview-descr {
+  margin: 0;
+}
+
+/* clients */
+
+.clients-item {
+  flex-direction: column;
+  width: 370px;
+  padding: 51px 36px;
+  padding-bottom: 30px;
+  outline: 1px solid coral;
+}
+
+.clients-item:not(:nth-child(3n)) {
+  margin-right: 30px;
+}
+
+.clients-item-descr {
+  margin: 0;
+  margin-bottom: 33px;
+}
+
+.clients-user {
+  margin-top: auto;
+  align-items: center;
+}
+
+.clients-avatar {
+  flex-shrink: 0;
+  width: 67px;
+  margin-right: 15px;
+}
+
+.clients-avatar>img {
+  object-fit: cover;
+  border: 2px solid #3172B9;
+  border-radius: 100%;
+}
+
+.clients-name {
+  margin-bottom: 5px;
 }
