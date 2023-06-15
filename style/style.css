@@ -423,6 +423,101 @@ body {
   color: #787878;
 }
 
+/* join us */
+
+.join-us {
+  border-bottom: 1px solid #dadada;
+}
+
+.join-us-title {
+  text-align: center;
+}
+
+.join-us-descr {
+  margin-bottom: 30px;
+}
+
+.form {
+  padding-left: 55px;
+  padding-right: 55px;
+}
+
+.form-input {
+  border: 1px solid #dadada;
+  border-radius: 50px;
+  box-sizing: border-box;
+  padding: 16px 28px;
+  width: 251px;
+  height: 60px;
+}
+
+.form-select {
+  border: 1px solid #dadada;
+  box-sizing: box-sizing;
+  border-radius: 50px;
+  padding: 16px 28px;
+  width: 251px;
+  height: 60px;
+}
+
+.form-textarea {
+  border: 1px solid #dadada;
+  box-sizing: border-box;
+  border-radius: 20px;
+  resize: none;
+  padding: 16px 28px;
+  width: 100%;
+  height: 87%;
+}
+
+.form-top {
+  justify-content: space-between;
+}
+
+.form-left {
+  width: 49%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.form-right {
+  width: 49%;
+}
+
+.form-bottom {
+  justify-content: flex-end;
+}
+
+.form-wrapper {
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-btn {
+  border-radius: 50px;
+  min-width: 230px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 9px;
+}
+
+.form-check {
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  color: #787878;
+}
+
+.form-check input {
+  margin-right: 8px;
+}
+
+.form-check a {
+ color: #3172B9;
+ border-bottom: 1px solid #3172B9;
+}
+
+
 /* footer */
 .footer {
   padding: 42px 0;
@@ -476,14 +571,14 @@ body {
   margin-right: 56px;
 }
 
-.social-link-tw{
-  background-image: url('../img/Tweeter.svg');
+.social-link-tw {
+  background-image: url("../img/Tweeter.svg");
 }
 
-.social-link-linkedin{
-  background-image: url('../img/LinckedLinn.svg');
+.social-link-linkedin {
+  background-image: url("../img/LinckedLinn.svg");
 }
 
-.social-link-mail{
-  background-image: url('../img/Email.svg');
+.social-link-mail {
+  background-image: url("../img/Email.svg");
 }
