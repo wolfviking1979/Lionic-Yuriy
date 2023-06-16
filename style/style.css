@@ -79,6 +79,7 @@ body {
   color: #fff;
   background-color: #3172b9;
   border-radius: 3px;
+  transition: background-color .3s ease-in-out;
 }
 
 .btn::after {
@@ -92,6 +93,7 @@ body {
   border-radius: inherit;
   outline: none;
   opacity: 0;
+  transition: opacity .3s ease-in-out;
 }
 
 .btn:focus::after {
@@ -171,6 +173,7 @@ body {
   font-weight: 600;
   font-size: 15px;
   color: #1c1c1c;
+  transition: color .3s ease-in-out;
 }
 
 .header-list-link:focus {
@@ -191,6 +194,7 @@ body {
   height: 2px;
   background-color: #3172b9;
   opacity: 0;
+  transition: opacity .3s ease-in-out;
 }
 
 .header-list-link:active {
@@ -285,6 +289,7 @@ body {
   border: 1px solid #e4e4e4;
   border-radius: 5px;
   cursor: pointer;
+  transition: background-color .3s ease-in-out, border-color .3s ease-in-out;
 }
 
 .services-item:hover {
@@ -297,16 +302,17 @@ body {
 }
 
 .services-item-icon {
- 
   margin-bottom: 25px;
 }
 
 .services-item-icon path {
    fill: #3172B9;
+   transition: fill .3s ease-in-out;
 }
 
 .services-item:hover .services-item-icon path {
   fill: #fff;
+  transition: fill .3s ease-in-out;
 }
 
 
@@ -318,6 +324,7 @@ body {
   line-height: 130%;
   text-align: center;
   color: #1c1c1c;
+  transition: color .3s ease-in-out;
 }
 
 .services-item:hover .services-item-title {
@@ -331,6 +338,7 @@ body {
   line-height: 150%;
   text-align: center;
   color: #787878;
+  transition: color .3s ease-in-out;
 }
 
 .services-item:hover .services-item-descr {
@@ -370,12 +378,13 @@ body {
   padding: 30px;
 }
 
-.blog-review-time {
+.blog-preview-time {
   display: block;
   margin-bottom: 5px;
   font-size: 10px;
   line-height: 150%;
   color: #787878;
+  transition: color .3s ease-in-out;
 }
 
 .blog-preview-title {
@@ -385,6 +394,7 @@ body {
   font-size: 20px;
   line-height: 130%;
   color: #1c1c1c;
+  transition: color .3s ease-in-out;
 }
 
 .blog-preview-descr {
@@ -393,6 +403,7 @@ body {
   line-height: 150%;
   color: #787878;
   max-width: 210px;
+  transition: color .3s ease-in-out;
 }
 
 .blog-preview-link {
@@ -400,6 +411,7 @@ body {
   position: relative;
   width: 100%;
   cursor: pointer;
+  transition: background-color .3s ease-in-out;
 }
 
 .blog-preview-link:focus {
@@ -567,6 +579,7 @@ body {
   font-size: 14px;
   line-height: 180%;
   color: #787878;
+  transition: color .3s ease-in-out;
 }
 
 .contacts-item-link:focus {
@@ -609,6 +622,11 @@ body {
   width: 251px;
   height: 60px;
   cursor: pointer;
+  transition: background-color .3s ease-in-out, border-color .3s ease-in-out;
+}
+
+.form-input:nth-child(-n+2) {
+  margin-bottom: 19px;
 }
 
 .form-input:focus {
@@ -633,6 +651,7 @@ body {
   width: 251px;
   height: 60px;
   cursor: pointer;
+  transition: background-color .3s ease-in-out, border-color .3s ease-in-out;
 }
 
 .form-select:focus {
@@ -657,8 +676,9 @@ body {
   resize: none;
   padding: 16px 28px;
   width: 100%;
-  height: 87%;
+  height: 100%;
   cursor: pointer;
+  transition: background-color .3s ease-in-out, border-color .3s ease-in-out;
 }
 
 .form-textarea:focus {
@@ -700,10 +720,12 @@ body {
 }
 
 .form-btn {
+  display: block;
   border-radius: 50px;
   min-width: 230px;
   padding-top: 20px;
   padding-bottom: 20px;
+  margin-top: 19px;
   margin-bottom: 9px;
 }
 
@@ -741,6 +763,7 @@ body {
 
 .footer-logo {
   margin-right: 25px;
+  outline: none;
 }
 
 .footer-item:not(:last-child) {
@@ -758,7 +781,39 @@ body {
   font-size: 15px;
   line-height: 20px;
   color: #787878;
+  transition: color .3s ease-in-out;
 }
+
+.footer-link:focus {
+  outline-offset: 2px;
+  outline: 1px solid #71a7e2;
+}
+
+.footer-link:hover {
+  color:#71a7e2;
+}
+
+.footer-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #3172b9;
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+}
+
+.footer-link:active {
+  color: #3172b9;
+  outline: none;
+}
+
+.footer-link:active::after {
+  opacity: 1;
+}
+
 
 .social-link {
   display: flex;
@@ -778,11 +833,13 @@ body {
 
 .social-link > svg path {
   fill: #1c1c1c;
+  transition: fill .3s ease-in-out;
 }
 
 .social-link-mail > svg path {
   fill: transparent;
   stroke: #1c1c1c;
+  transition: stroke .3s ease-in-out;
 }
 
 .social-link:focus {
@@ -792,11 +849,13 @@ body {
 
 .social-link:hover > svg path {
   fill: #71A7E2;
+  transition: fill .3s ease-in-out;
 }
 
 .social-link-mail:hover > svg path {
   fill: transparent;
   stroke: #71A7E2;
+  transition: stroke .3s ease-in-out;
 }
 
 .social-link:active {
@@ -805,11 +864,13 @@ body {
 
 .social-link:active > svg path {
   fill: #0e3b6c;
+  transition: fill .3s ease-in-out;
 }
 
 .social-link-mail:active > svg path {
   fill: transparent;
   stroke: #0e3b6c;
+  transition: stroke .3s ease-in-out;
 }
 
 
